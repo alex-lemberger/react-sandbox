@@ -108,6 +108,11 @@ function App() {
   };
 
   const runAction = async (kind, action, item) => {
+    if (dashboard?.demoMode) {
+      showToast('GitHub Pages is running in static demo mode. Start the local backend to use live controls.', 'error');
+      return;
+    }
+
     const handlers = {
       server: { start: startServer, stop: stopServer, restart: restartServer },
       app: { start: startApp, stop: stopApp, restart: restartApp },
@@ -225,6 +230,11 @@ function App() {
           </header>
 
           <main className="px-4 py-6 sm:px-6 lg:px-8">
+            {dashboard?.demoMode && (
+              <div className="mb-6 rounded-lg border border-sky-200 bg-sky-50 px-4 py-3 text-sm text-sky-800 dark:border-sky-500/30 dark:bg-sky-500/10 dark:text-sky-200">
+                GitHub Pages is showing static demo data because the local backend is unavailable. Run the backend locally to enable live data and controls.
+              </div>
+            )}
             <RouteContent
               route={activeRoute}
               users={users}
