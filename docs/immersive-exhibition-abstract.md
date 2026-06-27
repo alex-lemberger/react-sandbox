@@ -66,6 +66,30 @@ Deliverables:
 - one complete augmented artwork experience
 - interaction and hardware evaluation
 
+## Device Strategy
+
+The recommended first device for the project is the Meta Quest 3. It offers the best balance between visual quality, development practicality, mixed-reality capability, and price. For an artwork-driven project, image clarity matters more than it would for a purely functional prototype. Etchings depend on fine linework, edge definition, tonal detail, and viewer comfort, so the headset should make close visual inspection pleasant rather than tiring.
+
+The Meta Quest 3 is the preferred starting point because it provides strong standalone mixed-reality support, good development tooling, and better optics than cheaper alternatives. It can be used with Unity, WebXR, Three.js experiments, and native Quest development workflows. It is also realistic for exhibition planning because it is much more affordable than premium enterprise or Apple hardware while still being visually capable enough for serious prototyping.
+
+The Meta Quest 3S is a reasonable budget device, but it is not the preferred choice for this project. It is useful if the goal is only to learn the Quest ecosystem or test interaction logic cheaply. However, its lower visual quality and Fresnel lens system make it less suitable for viewing detailed etchings and line-based artwork. For games or simple interaction prototypes it may be enough; for an immersive art exhibition, the Quest 3 is the better choice.
+
+Recommended initial setup:
+
+- Meta Quest 3
+- improved head strap, ideally with battery support
+- carrying case for transport and exhibition testing
+- optional link cable for PC-based development workflows
+
+Alternative devices:
+
+- Apple Vision Pro: strongest premium presentation quality, but expensive and more locked into Apple's ecosystem. Better suited for a later high-end exhibition phase than the first prototype.
+- Meta Quest 3S: cheaper entry point, useful for learning and testing basic interaction, but weaker for artwork clarity.
+- XREAL-style glasses: interesting for lightweight display experiments, but less suitable for full spatial, interactive exhibition scenes.
+- Magic Leap or enterprise AR devices: conceptually close to true AR exhibition use, but expensive and less practical for an independent prototype.
+
+The practical recommendation is to begin with one Meta Quest 3, build the first complete artwork prototype, and only then decide whether the final exhibition should remain Quest-based or move to a more premium device.
+
 ## Phase 5: Narrative System
 
 Once the first immersive prototype works, the project develops a reusable narrative structure. Each artwork can contain scenes, triggers, text, audio, animation cues, and state changes. This system allows the exhibition to grow beyond a single artwork without rebuilding everything from scratch.
